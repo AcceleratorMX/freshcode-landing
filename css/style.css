@@ -3,6 +3,40 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+  max-width: 1440px;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.header {
+  width: 100%;
+  padding: 2rem 3.5rem;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-list {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+
+}
+.menu-item:not(:first-child) {
+  margin-left: 3.11em;
+}
+
+.menu-item:last-child {
+  margin-left: 1.4em;
+  text-transform: uppercase;
+  background-color: #7AE5FD;
+  padding: 1.25em 2.2em;
+  border-radius: 4.8em;
 }
 
 
