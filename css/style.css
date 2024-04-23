@@ -3,16 +3,29 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  max-width: 1440px;
-  margin: 0 auto;
   font-size: 20px;
   font-weight: 400;
   line-height: 20px;
 }
 
+.buttons {
+  display: inline-block;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  padding: 1.25em 2.2em;
+  border-radius: 4.8em;
+}
+
+.buttons:hover {
+  text-decoration: underline;
+}
+
+/* #region header */
 .header {
+  padding: 2em 3.5em;
   width: 100%;
-  padding: 2rem 3.5rem;
+  position: fixed;
+  background-color: #fff;
 }
 
 .header-content {
@@ -21,22 +34,65 @@ body {
   align-items: center;
 }
 
+.logo:hover {
+  border: 1px solid transparent; 
+}
+
 .menu-list {
   display: flex;
   align-items: center;
-  font-size: 18px;
-
+  font-size: 0.9em;
 }
+
 .menu-item:not(:first-child) {
   margin-left: 3.11em;
 }
 
 .menu-item:last-child {
   margin-left: 1.4em;
-  text-transform: uppercase;
   background-color: #7AE5FD;
-  padding: 1.25em 2.2em;
-  border-radius: 4.8em;
+}
+/* #endregion */
+/* region main */
+.main {
+  padding-top: 145px;
 }
 
+.section-hero {
+  background-image: url(/images/hero-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  margin-left: 100px;
+  max-width: 586px;
+  width: 100%;
+}
+
+.hero-title {
+  display: inline;
+  font-weight: 800;
+  font-size: 3.15em;
+  line-height: 1;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.hero-description {
+  margin-top: 1em;
+  font-size: 1em;
+  line-height: 1.2em;
+  max-width: 60%;
+}
+
+.hero-button {
+  margin-top: 1em;
+  background-color: #fff;
+}
+/* #endregion */
 
