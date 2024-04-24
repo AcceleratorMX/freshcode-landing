@@ -26,10 +26,11 @@ body {
   padding: 2em 3.5em;
   width: 100%;
   position: fixed;
-  background-color: #fff;
+  background-color: #ffffffd2;
+  z-index: 1;
 }
 
-.header-content {
+.header_content {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -57,6 +58,7 @@ body {
 /* region main */
 .main {
   padding-top: 145px;
+  height: 100vh;
 }
 
 .section-hero {
@@ -69,13 +71,13 @@ body {
   align-items: center;
 }
 
-.hero-content {
+.hero_content {
   margin-left: 5em;
   max-width: 30%;
   width: 100%;
 }
 
-.hero-title {
+.hero_title {
   display: inline;
   font-weight: 800;
   font-size: 3.15em;
@@ -84,14 +86,14 @@ body {
   text-transform: uppercase;
 }
 
-.hero-description {
+.hero_description {
   margin-top: 1em;
   font-size: 1em;
   line-height: 1.2em;
   max-width: 60%;
 }
 
-.hero-button {
+.hero_button {
   margin-top: 1em;
   background-color: #fff;
 }
@@ -103,25 +105,25 @@ body {
   align-items: center;
 }
 
-.description-content {
+.description_content {
   max-width: 50%;
   text-align: center;
 }
 
-.description-title {
+.description_title {
   font-size: 3em;
   line-height: 1.2em;
   text-transform: uppercase;
 }
 
-.description-subtitle {
+.description_subtitle {
   margin-top: 0.75em;
   font-size: 1.35em;
   line-height: 1.625em;
   letter-spacing: 0.02em;
 }
 
-.description-note {
+.description_note {
   margin-top: 0.5em;
   line-height: 1.2em;
   color: #73A6B1;
@@ -178,5 +180,38 @@ body {
   background-color: #7AE5FD;
   margin-bottom: 8em;
 }
-/* #endregion */
+
+.section-our-mission {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.our-mission_container {
+  padding: 0 3.5em;
+  position: relative;
+}
+
+.our-mission_content {
+  padding: 0 3.1em;
+  border: 1px solid red;
+  background-color: #F1FDFF;
+}
+
+.our-mission_text {
+  align-items: center;
+  padding: 4.5em 0;
+  max-width: 50%;
+  font-size: 1.35em;
+  line-height: 1.35em;
+}
+
+.our-mission_image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+} 
+/*  #endregion */
 
