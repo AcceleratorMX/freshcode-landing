@@ -126,5 +126,57 @@ body {
   line-height: 1.2em;
   color: #73A6B1;
 }
+
+.section-what-we-works {
+  width: 100%;
+}
+
+.what-we-works_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.75em;
+  padding: 0 3.5em;
+}
+
+.what-we-works_content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em 3.1em;
+  background-color: #F1FDFF;
+}
+
+.what-we-works_text {
+  display: inline-block;
+  margin-right: 3.1em;
+  max-width: 50%;
+}
+
+.what-we-works_content,
+.what-we-works_image {
+  border-radius: 0.5em;
+}
+
+.what-we-works_title {
+  font-size: 2.3em;
+  text-transform: uppercase;
+  margin-bottom: 0.5em;
+}
+
+.what-we-works_description {
+  line-height: 1.2em;
+  text-align: justify;
+}
+
+.what-we-works_image {
+  width: 50%;
+}
+
+.what-we-works_button {
+  background-color: #7AE5FD;
+  margin-bottom: 8em;
+}
 /* #endregion */
 
