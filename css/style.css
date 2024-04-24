@@ -1,5 +1,5 @@
 @import url(reset.css);
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400,800;1,400,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -21,9 +21,14 @@ section:not(:nth-child(3)) {
   background-color: #7AE5FD;
 }
 
-.buttons:hover,
-.menu-item:hover {
-  text-decoration: underline;
+.buttons:hover {
+  filter: opacity(0.7);
+  cursor: pointer;
+}
+
+.icons:hover {
+  border: 1px solid transparent;
+  cursor: pointer; 
 }
 
 /* #region header */
@@ -41,10 +46,6 @@ section:not(:nth-child(3)) {
   align-items: center;
 }
 
-.logo:hover {
-  border: 1px solid transparent; 
-}
-
 .menu-list {
   display: flex;
   align-items: center;
@@ -57,20 +58,22 @@ section:not(:nth-child(3)) {
 
 .menu-item:last-child {
   margin-left: 1.4em;
+}
 
+.menu-item:not(:last-child):hover {
+  text-decoration: underline;
 }
 /* #endregion */
 /* region main */
 .main {
   padding-top: 7.25em;
-  height: 100vh;
 }
 
 .section-hero {
   background-image: url(/images/hero-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
+
   display: flex;
   align-items: center;
 }
@@ -140,7 +143,7 @@ section:not(:nth-child(3)) {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2.75em;
+  gap: 2.5em;
   padding: 0 3.5em;
 }
 
@@ -186,7 +189,6 @@ section:not(:nth-child(3)) {
 
 .section-our-mission {
   width: 100%;
-  height: 100vh;
   display: flex;
   align-items: center;
 }
@@ -221,7 +223,7 @@ section:not(:nth-child(3)) {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2.75em;
+  gap: 2.5em;
 }
 
 .sponsorship-text_container {
@@ -274,8 +276,105 @@ section:not(:nth-child(3)) {
 .section-contacts {
   background-color: #F9FADF;
   padding: 0 3.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5em;
+  
+}
+
+.contacts_header {
+  padding-top: 2.5em;
+  display: flex;
+  justify-content: center;
+  gap:4.65em;
+  width: 100%;
+}
+
+.contacts_title {
+  text-align: center;
+  font-size: 3em;
+  line-height: 1.2em;
+  text-transform: uppercase;
+}
+
+.contacts_title,
+.contacts-header_content,
+.contacts_image,
+.contacts-form_container {
+  width: 50%;
+}
+
+.contacts-header_content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.85em;
+}
+
+.contacts-header_description {
+  line-height: 1.2em;
+}
+
+.contacts-header_description a {
+  font-weight: 800;
+}
+
+.contacts-header_description a:hover {
+  text-decoration: underline;
+}
+
+.social-info_icons li {
+  display: inline;
+}
+
+.social-info_icons li:not(:last-child) {
+  margin-right: 0.8em;
 }
 
 
+.contacts_body {
+  background-color: #fff;
+  border-radius: 0.5em;
+}
+
+.contacts_body {
+  padding: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:4.65em;
+  width: 100%;
+}
+
+.form-description {
+  font-size: 1.35em;
+  line-height: 1.2em;
+  margin-bottom: 2em;
+}
+
+.mail-form input {
+  display: block;
+  background-color:#F9FADF;
+  padding: 1.25em 2.2em;
+  border-radius: 4.8em;
+  margin-bottom: 1em;
+}
+
+.mail-form input,
+.input-form_button {
+  width: 100%;
+}
+
+::placeholder {
+  line-height: 1.2em;
+}
+
+.mail-form input:focus {
+  outline: 3px solid #7AE5FD;
+}
+
+.input-form_button {
+  text-align: center;
+}
 /*  #endregion */
 
